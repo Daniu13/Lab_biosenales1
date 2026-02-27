@@ -1,0 +1,21 @@
+caseid,casestart,caseend,anestart,aneend,opstart,opend,age,sex,weight,height,optype,dx
+2681,0.0,6080.0,-848.0,5632.0,1432.0,5032.0,28.0,M,182.0,65.2,Others,Crohn's disease moderate
+905,0.0,5717.0,7.0,5467.0,2167.0,4867.0,35.0,F,162.3,52.2,Breast,Breast cancer right
+516,0.0,13563.0,-1335.0,12765.0,1965.0,12765.0,34.0,F,163.1,45.1,Hepatic,Metastatic cancer to the liver
+3238,0.0,13776.0,-494.0,13606.0,2206.0,12706.0,51.0,F,157.5,52.8,Biliary/Pancreas,Gallbladder cancer
+5238,0.0,6611.0,-660.0,5760.0,2040.0,5760.0,41.0,F,150.1,51.7,Others,Intraductal papilloma
+6254,0.0,12433.0,-974.0,12526.0,1426.0,11832.0,65.0,F,153.8,51.9,Thyroid,Thyroid nodule
+639,0.0,6926.0,-451.0,6269.0,1769.0,5969.0,44.0,F,159.3,61.6,Breast,Benign neoplasm of breast right
+4892,0.0,10600.0,-355.0,10145.0,1445.0,9845.0,31.0,M,184.1,77.7,Thyroid,Thyroid nodule
+2166,0.0,7181.0,-244.0,6416.000001,2036.0,6116.0,28.0,F,150.1,51.7,Thyroid,Thyroid nodule
+4206,0.0,30748.0,-485.0,31135.0,3235.0,29035.0,69.0,M,164.5,65.6,Hepatic,hepatocellular carcinoma 
+2154,0.0,33951.0,-655.0,33845.0,1745.0,32645.0,44.0,F,167.8,55.7,Breast,Breast cancer left
+2229,0.0,10585.0,-474.0,10266.0,1866.0,9966.0,29.0,M,173.6,73.85,Colorectal,Abdominal mass 
+5123,0.0,5220.0,-1805.0,4975.0,1375.0,4375.0,30.0,F,156.9,53.1,Breast,Breast cancer unspecified side
+4269,0.0,13952.0,-869.0,13591.0,2791.0,12991.0,69.0,F,152.0,51.2,Colorectal,Colorectal polyp
+3113,0.0,20772.0,-353.0,20947.0,3247.0,19747.0,46.0,M,166.4,65.1,Transplantation,Hepatocellular carcinoma 
+609,0.0,7576.0,-1559.0,7441.0,1441.0,6841.0,55.0,F,158.2,53.9,Vascular,Varicose vein with nonspecific symptom
+4349,0.0,4126.0,-134.0,4546.0,1246.0,3346.0,44.0,F,156.0,46.0,Colorectal,Acute appendicitis
+4855,0.0,4708.0,-573.0,4227.0,627.0,3627.0,60.0,F,150.9,38.2,Colorectal,Incisional hernia
+839,0.0,6756.0,-1015.0,6125.0,1145.0,5645.0,65.0,F,152.7,56.7,Colorectal,"Colon cancer, transverse"
+1288,0.0,13746.0,-1144.0,14216.0,1616.0,13152.0,56.0,F,158.3,47.0,Stomach,early gastric cancer
