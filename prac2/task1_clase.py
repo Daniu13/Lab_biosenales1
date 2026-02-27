@@ -20,7 +20,7 @@ def rampa(n0, n1, n2):
 
 def graficar(x, n):
     fig, axs = plt.subplots(1, 1, figsize=(5, 4))
-    axs.plot(n, x, 'b-', label="Sn")
+    axs.stem(n, x, 'b-', label="Sn")
     axs.set_title('Señales Sn y tn')
     axs.set_xlabel('n')
     axs.set_ylabel('func')
