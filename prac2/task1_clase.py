@@ -45,9 +45,16 @@ def sinusoidal(n0, n1, n2, omega_null, theta_null):
 
 #5
 #A
-impulsos = [(3, 1), (5, 3), (3, 2), (3, 0), (1, 0)]
+impulsos = [(3, -1), (5, -3), (3, -2), (3, 0), (1, 0)] #Tuplas con amplitud y desfases
 x1 = sum(amp * impulso(n0, -20, 20)[0] for amp, n0 in impulsos)
-n = impulso(0, -20, 20)[1]
-graficar(x1, n)
+graficar(x1, impulso(0, -20, 20)[1])
 
 #B
+funciones = [
+    (2, -3, rampa),
+    (-1, 2, rampa),
+    (-5, 3, escalon)
+]
+x4 = sum(amp * func(n0, -10, 10)[0] for amp, n0, func in funciones)
+
+graficar(x4, impulso(0, -10, 10)[1])
