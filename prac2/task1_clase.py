@@ -81,9 +81,9 @@ graficar([(x4, impulso(0, -10, 10)[1])])
 #6
 #A
 xn = np.concatenate([rampa(0, 0, 5)[0], rampa(5, 6, 11)[0], rampa(-10, 12, 17)[0]])
-n = np.arange(0, len(xn))
 xn_derivada = np.concatenate([[0], np.diff(xn)])
-graficar([(xn, n), (xn_derivada, n)])
+graficar([(xn, np.arange(0, len(xn))),
+          (xn_derivada, np.arange(0, len(xn)))])
 
 #B
 """En el caso continuo, implica que tamibén apliquemos la derivada a tramos, 
@@ -92,3 +92,29 @@ numpy estamos trabajando las señales como vectores discretos, y como np.diff ca
 la derivada punto por punto por la fórmula 'out[i] = a[i+1] - a[i]', los saltos entre
 los puntos de corte de los intervalos, nos darán diferencias negativas.
 """
+
+#7
+x_n = np.concatenate([rampa(0, 0, 5)[0], (rampa(5, 5, 9)[0])[::-1],
+                      rampa(9, 10, 14)[0] + 1, 5 * escalon(15, 15, 17)[0],
+                      10 * escalon(17, 17, 20)[0]])
+graficar([(x_n, np.arange(0, len(x_n)))])
+
+def desplazar_secuencia(x_base, k, n_objetivo):
+    x_desplazada = np.zeros_like(n_objetivo, dtype=float)
+    for i, n in enumerate(n_objetivo):
+        indice_original = n - k
+        if 0 <= indice_original < len(x_base):
+            x_desplazada[i] = x_base[int(indice_original)]       
+    return x_desplazada
+#A
+x5 = (2 * desplazar_secuencia(x_n, 4, np.arange(-20, 21)) +
+      desplazar_secuencia(x_n, 0, np.arange(-20, 21)))
+graficar([(x5, np.arange(0, len(x5)))])
+
+#B
+n_rango = np.arange(-20, 21)
+exp_val, _ = exponencial(0, -20, 20, 0.5, 0)
+sin_val, _ = sinusoidal(0, -20, 20, 0.05 * np.pi, 0)
+x6 = (0.001 * exp_val.real * desplazar_secuencia(x_n, 0, n_rango) +
+      10 * sin_val * desplazar_secuencia(x_n, -2, n_rango))
+graficar([(x6, np.arange(0, len(x6)))])
