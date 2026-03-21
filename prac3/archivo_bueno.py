@@ -1,5 +1,5 @@
 from scipy.stats import mannwhitneyu
-from statsmodels.tsa.stattools import adfuller
+#from statsmodels.tsa.stattools import adfuller
 import scipy.io as sio
 import numpy as np
 import matplotlib.pyplot as plt
@@ -11,7 +11,7 @@ def rms(signal):
     return rms
 
 def graficar(t, signal, signal2):
-    fig, axs = plt.subplots(1, 1, figsize=(10, 5))
+    fig, axs = plt.subplots(1, 1, figsize=(20, 10))
     axs.plot(t, signal)
     axs.plot(t, signal2, '-r')
     axs.set_title('Señal')
@@ -25,7 +25,7 @@ def graficar(t, signal, signal2):
     return None
 
 fs = 1024 #Hz
-signals = sio.loadmat(r'C:\Users\soportedrai\Documents\Python Scripts\daniel_senales\Lab_biosenales1\prac3\signals.mat') # cambiar para colab
+signals = sio.loadmat(r'prac3\signals.mat') # cambiar para colab
 print(signals.keys())
 # 'ECG_asRecording'
 # 'EMG_asRecording1'
